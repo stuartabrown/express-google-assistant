@@ -13,6 +13,7 @@ const googleApp = dialogflow({debug: true});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  res.send('ga');
   // res.render('index', { title: 'Express' });
   // Handle the Dialogflow intent named 'favorite color'.
 // The intent collects a parameter named 'color'.
