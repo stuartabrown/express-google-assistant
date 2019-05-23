@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
   // res.render('index', { title: 'Express' });
   // Handle the Dialogflow intent named 'favorite color'.
 // The intent collects a parameter named 'color'.
-  app.intent('favorite color', (conv, {color}) => {
+googleApp.intent('favorite color', (conv, {color}) => {
     const luckyNumber = color.length;
     // Respond with the user's lucky number and end the conversation.
     conv.close('Your lucky number is ' + luckyNumber);
