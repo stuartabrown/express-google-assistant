@@ -27,7 +27,7 @@ expressApp.get("/", async (req, res) => {
   res.send("CONFIRMED RECEIPT OF GET REQUEST. ");
 });
 
-console.log("hello", process.env.TEST);
+console.log("hello", process.env.NODE_ENV);
 
 expressApp.listen(port, () => console.log(`app listening on port ${port}!`));
 
