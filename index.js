@@ -29,7 +29,7 @@ expressApp.get("/", async (req, res) => {
 
 console.log("hello", process.env.NODE_ENV);
 
-expressApp.listen(port, () => console.log(`app listening on port ${port}!`));
+expressApp.listen(process.env.PORT, () => console.log(`app listening on port ${process.env.PORT}!`));
 
 //EXPORT two endpoints:  one express app, one dialogflow app
 exports.fulfillmentExpressServer = functions.https.onRequest(expressApp);
